@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | CalorieCalc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <!-- Same Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#" class="logo">CalorieCalc</a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            
+            <nav class="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="abiutus.html" class="nav-link">About Us</a></li>
+                    <li><a href="caloriecount.html" class="nav-link">Count Calories </a></li>
+                    <li><a href="calculator.html" class="nav-link">Calculators</a></li>
+                    <li><a href="signin.html" class="nav-link">Sign in</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="theme-toggle-container">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <span class="toggle-icon">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                            </span>
+                            <span class="toggle-ball"></span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sign In Content -->
+    <main class="signin-main">
+        <div class="signin-container">
+            <div class="signin-left">
+                <div class="signin-content">
+                    <h1 class="signin-title">Welcome Back</h1>
+                    <p class="signin-subtitle">Sign in to access your personalized nutrition dashboard</p>
+                    
+                    <form class="signin-form">
+                        <div class="input-group floating">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group floating">
+                            <input type="password" id="password" required>
+                            <label for="password">Password</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Remember me
+                            </label>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                        
+                        <button type="submit" class="signin-btn">
+                            <span class="btn-text">Sign In</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                        
+                        <div class="divider">
+                            <span>or continue with</span>
+                        </div>
+                        
+                        <div class="social-login">
+                            <button type="button" class="social-btn google">
+                                <i class="fab fa-google"></i>
+                                Google
+                            </button>
+                            <button type="button" class="social-btn apple">
+                                <i class="fab fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+                </div>
+            </div>     
+        </div>
+    </main>
+
+    <!-- Same Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>CalorieCalc</h3>
+                <p>Helping you make informed decisions about your nutrition and fitness since 2023.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@caloriecalc.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Health City</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p id="para-subs">Subscribe to get nutrition tips and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footer1">&copy; 2023 CalorieCalc. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="logic.js"></script>
+    <script src="signin.js"></script>
+</body>
+</html>
