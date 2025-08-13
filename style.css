@@ -672,13 +672,14 @@ body {
         right: -100%;
         width: 70%;
         max-width: 300px;
-        height: 100vh;
+        height: 400px;
         background-color: var(--nav-bg);
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transition: right 0.3s ease;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     }
     
     .navbar-menu.active {
@@ -687,6 +688,7 @@ body {
     
     .navbar-links {
         flex-direction: column;
+        gap:10px;
         width: 100%;
     }
     
